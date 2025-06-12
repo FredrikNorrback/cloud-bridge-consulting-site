@@ -7,25 +7,25 @@ import { Award, Users, Clock, Target } from 'lucide-react';
 const About = () => {
   const stats = [
     { icon: Users, label: "Nöjda kunder", value: "150+" },
-    { icon: Clock, label: "Års erfarenhet", value: "10+" },
+    { icon: Clock, label: "Års erfarenhet", value: "40+" },
     { icon: Target, label: "Slutförda projekt", value: "500+" },
     { icon: Award, label: "Certifieringar", value: "25+" }
   ];
 
   const team = [
     {
-      name: "Sara Johansson",
-      role: "Huvudarkitekt Visma-system",
-      description: "15+ års erfarenhet av företags Visma-lösningar och systemarkitektur."
+      name: "Jan Norrbäck",
+      role: "Verksamhetskonsult IT-baserade affärssystem",
+      description: "40+ års erfarenhet av företags Visma-lösningar och systemarkitektur."
     },
     {
-      name: "Mikael Andersson",
+      name: "Fredrik Norrbäck",
       role: "Integrationsspecialist",
       description: "Expert på LogCore Auto och systemkonnektivitet mellan plattformar."
     },
     {
-      name: "Emma Lindström",
-      role: "Automatiseringskonsult",
+      name: "Anna Norrbäck",
+      role: "Redovisningskonsult",
       description: "Specialist på affärsprocessautomatisering och arbetsflödesoptimering."
     }
   ];

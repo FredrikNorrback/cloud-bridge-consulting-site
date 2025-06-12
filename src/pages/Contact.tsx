@@ -10,19 +10,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Mejla oss",
-      details: "info@jn.net",
+      details: "info@jnnet.se",
       description: "Skicka oss ett mejl när som helst"
     },
     {
       icon: Phone,
       title: "Ring oss",
-      details: "+46 (0)8 123-456",
+      details: "+46 70 44 446-90",
       description: "Mån-Fre från 08:00 till 17:00"
     },
     {
       icon: MapPin,
-      title: "Besök oss",
-      details: "Storgatan 123, Stockholm",
+      title: "Vi finns i",
+      details: "Västerås",
       description: "Vårt huvudkontor"
     },
     {
@@ -43,7 +43,7 @@ const Contact = () => {
             Kontakta oss
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Redo att transformera ditt företag med sömlösa Visma-integrationer? 
+            Redo att transformera ditt företag med sömlösa integrationer? 
             Låt oss diskutera ditt projekt och se hur vi kan hjälpa.
           </p>
         </div>

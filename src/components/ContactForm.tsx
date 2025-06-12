@@ -1,5 +1,5 @@
-
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -14,15 +14,41 @@ const ContactForm = () => {
     company: '',
     message: ''
   });
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Contact form submitted:', formData);
-    toast({
-      title: "Meddelande skickat!",
-      description: "Vi återkommer till dig inom 24 timmar.",
-    });
-    setFormData({ name: '', email: '', company: '', message: '' });
+    setIsLoading(true);
+
+    try {
+      await emailjs.send(
+        'service_rhiq54x', // Replace with your EmailJS service ID
+        'template_i8y8dcd', // Replace with your EmailJS template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          company: formData.company,
+          message: formData.message,
+          to_email: 'info@jnnet.se',
+          reply_to: formData.email
+        },
+        'BP7zIWC015p2dimq5' // Replace with your EmailJS public key
+      );
+      
+      toast({
+        title: "Meddelande skickat!",
+        description: "Vi återkommer till dig inom 24 timmar.",
+      });
+      setFormData({ name: '', email: '', company: '', message: '' });
+    } catch (error) {
+      toast({
+        title: "Fel uppstod",
+        description: "Kunde inte skicka meddelandet. Försök igen.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -34,6 +60,7 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {/* Your existing form fields remain the same */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <Label htmlFor="name">Fullständigt namn</Label>
@@ -44,7 +71,7 @@ const ContactForm = () => {
             onChange={handleChange}
             required
             className="mt-1"
-            placeholder="Anna Andersson"
+            placeholder="Ditt Namn"
           />
         </div>
         <div>
@@ -57,7 +84,7 @@ const ContactForm = () => {
             onChange={handleChange}
             required
             className="mt-1"
-            placeholder="anna@foretag.se"
+            placeholder="email@foretag.se"
           />
         </div>
       </div>
@@ -88,8 +115,8 @@ const ContactForm = () => {
         />
       </div>
       
-      <Button type="submit" size="lg" className="w-full">
-        Skicka meddelande
+      <Button type="submit" size="lg" className="w-full" disabled={isLoading}>
+        {isLoading ? 'Skickar...' : 'Skicka meddelande'}
       </Button>
     </form>
   );
