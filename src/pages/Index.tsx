@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
-import { CheckCircle, ArrowRight, Star } from 'lucide-react';
+import { CheckCircle, ArrowRight, Settings, Database, Workflow } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -17,24 +17,24 @@ const Index = () => {
     "Skalbar systemarkitektur"
   ];
 
-  const testimonials = [
+  const expertise = [
     {
-      name: "Anna Svensson",
-      company: "TechCorp Industries",
-      quote: "JN.Net transformerade hela vår verksamhet. Integrationen mellan vårt CRM och Visma.net har sparat oss otaliga timmar.",
-      rating: 5
+      icon: Settings,
+      title: "Visma-expertis",
+      description: "Djup kunskap inom Visma.net och Visma NXT med över 10 års erfarenhet av implementationer och optimeringar.",
+      details: ["Systemkonfiguration", "Användarutbildning", "Processoptimering", "Uppgraderingar"]
     },
     {
-      name: "Lars Andersson",
-      company: "Global Logistics",
-      quote: "Deras expertis inom Visma-system var ovärderlig. Vi automatiserade 15 processer med LogCore Auto. Imponerande!",
-      rating: 5
+      icon: Database,
+      title: "LogCore Auto Integrationer",
+      description: "Byggd för att skapa sömlösa integrationer mellan alla typer av affärssystem med branschens mest kraftfulla verktyg.",
+      details: ["API-integrationer", "Datasynkronisering", "Realtidsöverföring", "Felhantering"]
     },
     {
-      name: "Maria Lindberg",
-      company: "Financial Services Ltd",
-      quote: "Säkerhets- och efterlevnadsfunktionerna överträffade våra förväntningar. Rekommenderar starkt för seriösa företag.",
-      rating: 5
+      icon: Workflow,
+      title: "Arbetsflödesautomatisering",
+      description: "Automatisera repetitiva uppgifter och skapa effektiva arbetsflöden som sparar tid och minskar fel.",
+      details: ["Processautomatisering", "Regelbaserade flöden", "Notifieringar", "Rapportering"]
     }
   ];
 
@@ -66,33 +66,37 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Expertise Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Vad våra kunder säger
+              Vår expertis inom systemintegrationer
             </h2>
             <p className="text-xl text-muted-foreground">
-              Verkliga resultat från verkliga företag
+              Specialiserade på Visma-system och LogCore Auto för alla dina integrationsbehov
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-card border border-border rounded-lg p-6">
-                <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                  ))}
+            {expertise.map((item, index) => {
+              const IconComponent = item.icon;
+              return (
+                <div key={index} className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-all duration-300">
+                  <IconComponent className="h-12 w-12 text-primary mb-6" />
+                  <h3 className="text-xl font-semibold text-foreground mb-4">{item.title}</h3>
+                  <p className="text-muted-foreground mb-6">{item.description}</p>
+                  <ul className="space-y-2">
+                    {item.details.map((detail, idx) => (
+                      <li key={idx} className="flex items-center text-sm text-muted-foreground">
+                        <CheckCircle className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
+                        {detail}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <p className="text-muted-foreground mb-4 italic">"{testimonial.quote}"</p>
-                <div>
-                  <p className="font-semibold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.company}</p>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

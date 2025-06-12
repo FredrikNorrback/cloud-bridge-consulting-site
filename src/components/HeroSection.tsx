@@ -23,9 +23,9 @@ const HeroSection = () => {
             <span className="text-primary block mt-2">Sömlösa Systemintegrationer</span>
           </h1>
           <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Vi är expertkonsulter specialiserade på affärssystem och integrationer. 
-            Låt oss skapa sömlösa integrationer mellan dina system med LogCore Auto, 
-            optimera dina Visma.net och Visma NXT-lösningar, och automatisera dina arbetsflöden.
+            Vi är expertkonsulter specialiserade på <strong>Visma.net och Visma NXT</strong>. 
+            Med <strong>LogCore Auto</strong> skapar vi sömlösa integrationer mellan alla typer av affärssystem, 
+            automatiserar dina arbetsflöden och optimerar dina affärsprocesser.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -45,18 +45,18 @@ const HeroSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <Cloud className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2 text-white">Systemintegrationer</h3>
-              <p className="text-gray-200">Sömlösa integrationer med LogCore Auto för optimerade arbetsflöden</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <Zap className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-2 text-white">Visma-konsultation</h3>
               <p className="text-gray-200">Expert på Visma.net och Visma NXT för optimerade affärsprocesser</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <Zap className="h-12 w-12 text-primary mx-auto mb-4" />
+              <h3 className="text-lg font-semibold mb-2 text-white">LogCore Auto Integrationer</h3>
+              <p className="text-gray-200">Sömlösa integrationer mellan alla typer av affärssystem med LogCore Auto</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <Shield className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-2 text-white">Automatisering</h3>
-              <p className="text-gray-200">Automatisera dina arbetsflöden för ökad effektivitet</p>
+              <p className="text-gray-200">Automatisera dina arbetsflöden för ökad effektivitet och produktivitet</p>
             </div>
           </div>
         </div>

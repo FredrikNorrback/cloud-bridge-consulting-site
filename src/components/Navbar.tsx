@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -22,8 +21,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl font-bold text-primary">
-              JN.Net
+            <Link to="/" className="flex items-center space-x-2">
+              <div className="text-3xl font-black bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+                JN
+              </div>
+              <div className="text-2xl font-bold text-primary">
+                .Net
+              </div>
             </Link>
           </div>
           
