@@ -8,11 +8,11 @@ const Navbar = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Home', path: '/' },
-    { name: 'Services', path: '/services' },
-    { name: 'About Us', path: '/about' },
-    { name: 'News', path: '/news' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Hem', path: '/' },
+    { name: 'Tjänster', path: '/services' },
+    { name: 'Om oss', path: '/about' },
+    { name: 'Nyheter', path: '/news' },
+    { name: 'Kontakt', path: '/contact' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <Link to="/" className="text-2xl font-bold text-primary">
-              CloudSync
+              JN.Net
             </Link>
           </div>
           

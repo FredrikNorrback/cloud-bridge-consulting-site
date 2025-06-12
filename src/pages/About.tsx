@@ -6,27 +6,27 @@ import { Award, Users, Clock, Target } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { icon: Users, label: "Happy Clients", value: "150+" },
-    { icon: Clock, label: "Years Experience", value: "10+" },
-    { icon: Target, label: "Projects Completed", value: "500+" },
-    { icon: Award, label: "Certifications", value: "25+" }
+    { icon: Users, label: "Nöjda kunder", value: "150+" },
+    { icon: Clock, label: "Års erfarenhet", value: "10+" },
+    { icon: Target, label: "Slutförda projekt", value: "500+" },
+    { icon: Award, label: "Certifieringar", value: "25+" }
   ];
 
   const team = [
     {
-      name: "Sarah Johnson",
-      role: "Lead Cloud Architect",
-      description: "15+ years in enterprise cloud solutions and system architecture."
+      name: "Sara Johansson",
+      role: "Huvudarkitekt Visma-system",
+      description: "15+ års erfarenhet av företags Visma-lösningar och systemarkitektur."
     },
     {
-      name: "Michael Chen",
-      role: "Integration Specialist",
-      description: "Expert in API development and system connectivity across platforms."
+      name: "Mikael Andersson",
+      role: "Integrationsspecialist",
+      description: "Expert på LogCore Auto och systemkonnektivitet mellan plattformar."
     },
     {
-      name: "Emily Rodriguez",
-      role: "Security Consultant",
-      description: "Specialized in cloud security and compliance frameworks."
+      name: "Emma Lindström",
+      role: "Automatiseringskonsult",
+      description: "Specialist på affärsprocessautomatisering och arbetsflödesoptimering."
     }
   ];
 
@@ -37,11 +37,11 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            About CloudSync
+            Om JN.Net
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We're passionate about helping businesses unlock the full potential of cloud technology 
-            through seamless system integrations and expert consulting.
+            Vi brinner för att hjälpa företag att låsa upp den fulla potentialen hos Visma-system 
+            genom sömlösa integrationer och expertrågivning.
           </p>
         </div>
 
@@ -57,48 +57,48 @@ const About = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div>
-            <h2 className="text-3xl font-bold mb-6">Our Story</h2>
+            <h2 className="text-3xl font-bold mb-6">Vår historia</h2>
             <p className="text-muted-foreground mb-4">
-              Founded in 2014, CloudSync emerged from a simple observation: businesses were struggling 
-              to make their various systems work together effectively. We saw companies with powerful 
-              individual tools that couldn't communicate, leading to inefficiencies and missed opportunities.
+              Grundat 2014, JN.Net uppstod från en enkel observation: företag kämpade för att få sina 
+              olika Visma-system att fungera tillsammans effektivt. Vi såg företag med kraftfulla 
+              individuella verktyg som inte kunde kommunicera, vilket ledde till ineffektivitet och missade möjligheter.
             </p>
             <p className="text-muted-foreground mb-4">
-              Our founders, with decades of combined experience in enterprise software and cloud technologies, 
-              set out to bridge these gaps. Today, we've helped over 150 companies transform their operations 
-              through intelligent system integration and cloud migration strategies.
+              Våra grundare, med decennier av samlad erfarenhet av företagsmjukvara och Visma-teknologier, 
+              satte sig för att överbrygga dessa klyftor. Idag har vi hjälpt över 150 företag att transformera 
+              sina verksamheter genom intelligenta systemintegrationer och LogCore Auto-strategier.
             </p>
             <p className="text-muted-foreground">
-              We believe that technology should work for your business, not against it. Every integration 
-              we design is built with your specific needs in mind, ensuring maximum efficiency and scalability.
+              Vi tror att teknologi ska fungera för ditt företag, inte emot det. Varje integration 
+              vi designar är byggd med dina specifika behov i åtanke, vilket säkerställer maximal effektivitet och skalbarhet.
             </p>
           </div>
           
           <div>
-            <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
+            <h2 className="text-3xl font-bold mb-6">Vårt uppdrag</h2>
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-6">
               <p className="text-foreground font-medium">
-                "To empower businesses by creating seamless connections between their systems, 
-                enabling them to focus on what they do best while we handle the technical complexity."
+                "Att ge företag kraft genom att skapa sömlösa kopplingar mellan deras Visma-system, 
+                vilket gör det möjligt för dem att fokusera på det de gör bäst medan vi hanterar den tekniska komplexiteten."
               </p>
             </div>
             <div className="space-y-4">
               <div>
                 <h3 className="font-semibold mb-2">Innovation</h3>
                 <p className="text-muted-foreground text-sm">
-                  We stay at the forefront of cloud technology to bring you cutting-edge solutions.
+                  Vi håller oss i framkant av Visma-teknologi för att ge dig toppmoderna lösningar.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold mb-2">Reliability</h3>
+                <h3 className="font-semibold mb-2">Tillförlitlighet</h3>
                 <p className="text-muted-foreground text-sm">
-                  Our solutions are built for stability, security, and long-term success.
+                  Våra lösningar är byggda för stabilitet, säkerhet och långsiktig framgång.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold mb-2">Partnership</h3>
+                <h3 className="font-semibold mb-2">Partnerskap</h3>
                 <p className="text-muted-foreground text-sm">
-                  We work closely with you as a trusted partner, not just a service provider.
+                  Vi arbetar nära dig som en betrodd partner, inte bara en tjänsteleverantör.
                 </p>
               </div>
             </div>
@@ -106,7 +106,7 @@ const About = () => {
         </div>
 
         <div>
-          <h2 className="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Träffa vårt team</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {team.map((member, index) => (
               <div key={index} className="bg-card border border-border rounded-lg p-6 text-center">

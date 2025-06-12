@@ -9,31 +9,31 @@ import { Link } from 'react-router-dom';
 
 const Index = () => {
   const benefits = [
-    "Reduced operational costs by up to 40%",
-    "Improved system efficiency and reliability",
-    "Seamless data flow between platforms",
-    "Enhanced security and compliance",
-    "24/7 monitoring and support",
-    "Scalable cloud infrastructure"
+    "Minskade driftskostnader med upp till 40%",
+    "Förbättrad systemeffektivitet och tillförlitlighet",
+    "Sömlöst dataflöde mellan plattformar",
+    "Förstärkt säkerhet och regelefterlevnad",
+    "24/7 övervakning och support",
+    "Skalbar systemarkitektur"
   ];
 
   const testimonials = [
     {
-      name: "John Smith",
+      name: "Anna Svensson",
       company: "TechCorp Industries",
-      quote: "CloudSync transformed our entire operation. The integration between our CRM and ERP systems has saved us countless hours.",
+      quote: "JN.Net transformerade hela vår verksamhet. Integrationen mellan vårt CRM och Visma.net har sparat oss otaliga timmar.",
       rating: 5
     },
     {
-      name: "Sarah Williams",
+      name: "Lars Andersson",
       company: "Global Logistics",
-      quote: "Their expertise in cloud migration was invaluable. We moved 15 systems with zero downtime. Impressive!",
+      quote: "Deras expertis inom Visma-system var ovärderlig. Vi automatiserade 15 processer med LogCore Auto. Imponerande!",
       rating: 5
     },
     {
-      name: "Michael Brown",
+      name: "Maria Lindberg",
       company: "Financial Services Ltd",
-      quote: "The security and compliance features exceeded our expectations. Highly recommend for any serious business.",
+      quote: "Säkerhets- och efterlevnadsfunktionerna överträffade våra förväntningar. Rekommenderar starkt för seriösa företag.",
       rating: 5
     }
   ];
@@ -48,10 +48,10 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Why Choose CloudSync?
+              Varför välja JN.Net?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Join hundreds of businesses that have transformed their operations with our expert integration services
+              Anslut dig till hundratals företag som har transformerat sina verksamheter med våra expertintegrationstjänster
             </p>
           </div>
           
@@ -71,10 +71,10 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              What Our Clients Say
+              Vad våra kunder säger
             </h2>
             <p className="text-xl text-muted-foreground">
-              Real results from real businesses
+              Verkliga resultat från verkliga företag
             </p>
           </div>
           
@@ -101,21 +101,21 @@ const Index = () => {
       <section className="py-20 bg-primary/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Ready to Transform Your Business?
+            Redo att transformera ditt företag?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Let's discuss your integration needs and create a custom solution that drives results.
+            Låt oss diskutera dina integrationsbehov och skapa en anpassad lösning som ger resultat.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="text-lg px-8 py-6">
               <Link to="/contact">
-                Start Your Project
+                Starta ditt projekt
                 <ArrowRight className="ml-2" size={20} />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
               <Link to="/services">
-                Learn More
+                Läs mer
               </Link>
             </Button>
           </div>

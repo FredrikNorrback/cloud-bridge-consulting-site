@@ -9,40 +9,40 @@ import { Link } from 'react-router-dom';
 const Services = () => {
   const services = [
     {
-      icon: Cloud,
-      title: "Cloud Migration",
-      description: "Seamlessly migrate your legacy systems to modern cloud platforms with minimal downtime and maximum efficiency.",
-      features: ["AWS, Azure, GCP expertise", "Zero-downtime migrations", "Cost optimization", "Performance monitoring"]
-    },
-    {
       icon: Database,
-      title: "System Integration",
-      description: "Connect disparate business systems to create unified workflows and eliminate data silos.",
-      features: ["API development", "Real-time data sync", "Custom connectors", "Workflow automation"]
+      title: "Visma.net Konsultation",
+      description: "Experthjälp med Visma.net-implementation, konfiguration och optimering för maximala affärsfördelar.",
+      features: ["Visma.net implementation", "Systemkonfiguration", "Användarutbildning", "Prestandaoptimering"]
     },
     {
-      icon: Shield,
-      title: "Security & Compliance",
-      description: "Implement enterprise-grade security measures and ensure compliance with industry standards.",
-      features: ["Data encryption", "Access controls", "Compliance auditing", "Security monitoring"]
+      icon: Cloud,
+      title: "Visma NXT Integration",
+      description: "Specialiserad på Visma NXT-lösningar och integrationer för moderna affärsprocesser.",
+      features: ["Visma NXT setup", "API-integrationer", "Molnmigration", "Systemuppdateringar"]
     },
     {
       icon: Zap,
-      title: "Performance Optimization",
-      description: "Optimize your systems for peak performance, scalability, and reliability.",
-      features: ["Load balancing", "Auto-scaling", "Performance tuning", "Monitoring & alerting"]
+      title: "LogCore Auto Integrationer",
+      description: "Bygg kraftfulla, sömlösa integrationer mellan dina system med LogCore Auto-plattformen.",
+      features: ["Anpassade kopplingar", "Realtidsdatasynk", "Automatiserade arbetsflöden", "API-utveckling"]
+    },
+    {
+      icon: Shield,
+      title: "Affärsprocessautomatisering",
+      description: "Automatisera repetitiva uppgifter och optimera arbetsflöden för ökad produktivitet.",
+      features: ["Processanalys", "Arbetsflödesdesign", "Automatiseringslösningar", "Effektivitetsmätning"]
     },
     {
       icon: Users,
-      title: "Consulting & Strategy",
-      description: "Strategic guidance to align your technology stack with business objectives.",
-      features: ["Technology roadmaps", "Architecture design", "Best practices", "Training & support"]
+      title: "Systemkonsultation & Strategi",
+      description: "Strategisk vägledning för att anpassa din teknikstack med affärsmål.",
+      features: ["Teknikroadmaps", "Arkitekturdesign", "Bästa praxis", "Utbildning & support"]
     },
     {
       icon: Settings,
-      title: "Ongoing Support",
-      description: "24/7 monitoring and support to ensure your systems run smoothly and efficiently.",
-      features: ["24/7 monitoring", "Proactive maintenance", "Issue resolution", "Regular updates"]
+      title: "Löpande Support",
+      description: "24/7 övervakning och support för att säkerställa att dina system fungerar smidigt.",
+      features: ["24/7 övervakning", "Proaktivt underhåll", "Problemlösning", "Regelbundna uppdateringar"]
     }
   ];
 
@@ -53,10 +53,10 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Our Services
+            Våra Tjänster
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive cloud consulting and integration services to transform your business operations
+            Omfattande konsultation och integrationstjänster för Visma-system och affärsprocessautomatisering
           </p>
         </div>
 
@@ -79,13 +79,13 @@ const Services = () => {
         </div>
 
         <div className="bg-primary/5 border border-primary/20 rounded-lg p-8 text-center">
-          <h2 className="text-2xl font-bold mb-4">Ready to Get Started?</h2>
+          <h2 className="text-2xl font-bold mb-4">Redo att komma igång?</h2>
           <p className="text-muted-foreground mb-6">
-            Let's discuss your specific needs and create a custom solution for your business.
+            Låt oss diskutera dina specifika behov och skapa en anpassad lösning för ditt företag.
           </p>
           <Button asChild size="lg">
             <Link to="/contact">
-              Schedule a Consultation
+              Boka en konsultation
             </Link>
           </Button>
         </div>
